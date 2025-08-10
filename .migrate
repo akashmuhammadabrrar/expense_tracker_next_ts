@@ -1,0 +1,9 @@
+{
+  "lastRun": "1754854082293-create-expenses-table.js",
+  "migrations": [
+    {
+      "title": "1754854082293-create-expenses-table.js",
+      "timestamp": 1754854134712
+    }
+  ]
+}
