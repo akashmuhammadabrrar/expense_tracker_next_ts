@@ -1,8 +1,14 @@
-import { PrismaClient } from "@prisma/client";
+// lib/db.ts
+import { PrismaClient } from '@prisma/client'
+
 declare global {
-    var prisma: PrismaClient | undefined;
+  var prisma: PrismaClient | undefined
 }
-const db = globalThis.prisma || new PrismaClient();
-if (process.env.NODE_ENV !== "production") {
-    globalThis.prisma = db;
+
+const db = globalThis.prisma || new PrismaClient()
+
+if (process.env.NODE_ENV !== 'production') {
+  globalThis.prisma = db
 }
+
+export default db // This line is absolutely critical
